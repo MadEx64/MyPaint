@@ -1,0 +1,79 @@
+html, body {
+  margin: 0px;
+  border: 0;
+  background-color: dimgray;
+}
+
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+main {
+	margin-top: 150px;
+	flex: 1 0 auto;
+}
+
+nav {
+  background-color: rgba(255, 85, 85, 0.6) !important;
+}
+
+nav ul li.active {
+	background-color: rgb(138, 58, 58);
+}
+
+nav button {
+  padding: 10px;
+  margin: 10px;
+}
+
+.draw_type {
+  margin: 10px;
+}
+
+.color_input {
+	margin: 10px;
+}
+
+#color-picker {
+  border: none;
+  padding: 0px;
+  margin: 10px;
+  width: 40px;
+}
+
+.range-field {
+  margin: 0px 40px;
+}
+
+#zone {
+	background-color: rgba(255,255,255,0.8);
+	width: 800px;
+	height: 420px;
+}
+
+.style_p {
+	width: 800px;
+	height: 420px;
+	margin: 0px auto;
+	display: block;
+}
+
+canvas {
+	position: absolute;
+	width: 800px;
+	height: 420px;
+}
+
+.active_erase {
+	background-color: rgba(219,0,0,0.8);
+}
+
+.input_txt {
+	width: 120px !important;
+}
+
+#rgb {
+	height: 2rem !important;
+}
