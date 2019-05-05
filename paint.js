@@ -180,7 +180,13 @@ $("#zone").on("mouseenter", canvas, function () {
     }
 });
 
-$("#clear-btn").on("click", function () {
+$("#dl").on("click", function () {
+    var data = canvas.toDataURL("image/png");
+    this.href = data.replace(/^data:image\/[^;]/, "data:application/octet-stream");
+});
+
+
+$(".clear").on("click", function () {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 });
 
